@@ -1,3 +1,25 @@
+Forked to build with Titanium SDK 5.5.1GA.
+# Build instructions</h1>
+## iOS
+- Make sure Titanium SDK 5.5.1GA is installed
+```
+cd iphone
+appc run -p ios --build-only
+```
+
+the complied module is saved as a zip file in `./iphone/{modulename}.zip`
+## Android
+- Make sure Titanium SDK 5.5.1GA is installed
+- Install Android NDK r12 from https://developer.android.com/ndk/downloads/older_releases.html
+- Run `ti setup` and set the correct path to the Android NDK
+```
+cd Android
+appc run -p android --build-only
+```
+
+the complied module is saved as a zip file in `./Android/dist/{modulename}.zip`
+
+
 <h1>Ti.GA</h1>
 
 A Google Analytics module that provides just what you need, in a consistent way.
